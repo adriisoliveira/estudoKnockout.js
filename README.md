@@ -95,3 +95,18 @@ Template Bindings
 É uma forma de preencher um elemento HTML com um trecho de código (html) reutilizável, alcançando construções de estruturas mais complexas, hierárquicas e de forma modular facilitando sua compreensão, ou seja, quando você redenrizar a estrutura você vai preencher com outro trecho de html.
 Existe duas maneiras de utilizar o template Bindgs.
 Uma é usando o mecanismo nativo do knockout e outra é usando um mecanismo de terceiros, acoplado a biblioteca.
+
+
+NOTAS
+
+extends - Notfily - informaquando deve-se notificar os observadores da propriedade, em qualquer situação
+extends - ratelimity - os observaveis vão notificar imediatamente quando ocorrer uma mudaça neles, esse extends segura a atualização para quando este observável é mudado o valor muitas vezes seguidas, a notificação é segurada por alguns milisegundos, para que não haja degradação de performaces.
+
+PURE COMPUTED OBSERVABLE - A diferença é a maneira que o knockoute vai controlar o pure computed nos "bastidores".
+Quando usar pure computed - 
+Quando usar computed - 
+
+O parametro this, voce diz para esse observable computavel quem vai ser o objeto do contexto dessa instrução (funcition), se voce passa this neste contexto representa a viewModel
+
+BINDING PRÁTICA
+Novo HTML para a implementação do binding
